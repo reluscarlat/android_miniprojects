@@ -1,0 +1,17 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Coffee Shop</string>
+    <string name="toppings">Toppings:</string>
+    <string name="cream_topping">Whipped Cream +$0.5</string>
+    <string name="chocolate_topping">Chocolate +$0.5</string>
+    <string name="order_button">Order</string>
+    <string name="topping_list">With toppings: </string>
+    <string name="minus_button">-</string>
+    <string name="plus_button">+</string>
+    <string name="quantity_label">Quantity:</string>
+    <string name="quantity">0</string>
+    <string name="total_price">$0.00</string>
+    <string name="total_label">Total: </string>
+    <string name="order_thanks_message">Thank you, <xliff:g id="customerName" example="Amy">%s</xliff:g> !</string>
+    <string name="coffe_description">A good coffee.</string>
+    <string name="name_hint">Name</string>
+</resources>
