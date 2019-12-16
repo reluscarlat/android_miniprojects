@@ -13,6 +13,7 @@ public class FamilyActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        System.out.println("---------------------- CREATE ----------------------");
         setContentView(R.layout.activity_family);
 
         List<FamilyMember> familyMembers = new ArrayList<>();
@@ -31,4 +32,28 @@ public class FamilyActivity extends AppCompatActivity {
         ListView familiMembersListView = findViewById(R.id.family_members_list_view);
         familiMembersListView.setAdapter(familyMembersAdapter);
     }
+//
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
+//        System.out.println("---------------------- START ----------------------");
+//    }
+//
+//    @Override
+//    protected void onResume() {
+//        super.onResume();
+//        System.out.println("---------------------- RESUME ----------------------");
+//    }
+//
+//    @Override
+//    protected void onPause() {
+//        super.onPause();
+//        System.out.println("---------------------- PAUSE ----------------------");
+//    }
+//
+//    @Override
+//    protected void onStop() {
+//        super.onStop();
+//        System.out.println("---------------------- STOP ----------------------");
+//    }
 }

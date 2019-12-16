@@ -41,29 +41,29 @@ public class NumberAdapter extends ArrayAdapter<Word> {
         translatedNumberView.setText(currentWord.getTranslatedNumber());
         numberImage.setImageResource(currentWord.getNumberImage());
 
-        mediaPlayer = MediaPlayer.create(getContext(), currentWord.getSound());
-        playButtonImage.setOnClickListener(v->{
-            if(null == mediaPlayer) {
-                mediaPlayer = MediaPlayer.create(getContext(), currentWord.getSound());
-            }
-            if(mediaPlayer.isPlaying()) {
-                mediaPlayer.pause();
-                playButtonImage.setImageResource(R.drawable.play_button_white);
-                playButtonImage.setPadding(0,0,0,0);
-
-            } else {
-                mediaPlayer.start();
-                playButtonImage.setImageResource(R.drawable.pause_button_white);
-                playButtonImage.setPadding(25,25,25,25);
-                mediaPlayer.setOnCompletionListener( c ->{
-                    System.out.println("SOUND FOR " + currentWord.getNumber() + " IS COMPLETED. ---------------------");
-                    playButtonImage.setImageResource(R.drawable.play_button_white);
-                    playButtonImage.setPadding(0,0,0,0);
-                    mediaPlayer.release();
-                    mediaPlayer = null;
-                });
-            }
-        });
+//        mediaPlayer = MediaPlayer.create(getContext(), currentWord.getSound());
+//        playButtonImage.setOnClickListener(v->{
+//            if(null == mediaPlayer) {
+//                mediaPlayer = MediaPlayer.create(getContext(), currentWord.getSound());
+//            }
+//            if(mediaPlayer.isPlaying()) {
+//                mediaPlayer.pause();
+//                playButtonImage.setImageResource(R.drawable.play_button_white);
+//                playButtonImage.setPadding(0,0,0,0);
+//
+//            } else {
+//                mediaPlayer.start();
+//                playButtonImage.setImageResource(R.drawable.pause_button_white);
+//                playButtonImage.setPadding(25,25,25,25);
+//                mediaPlayer.setOnCompletionListener( c ->{
+//                    System.out.println("SOUND FOR " + currentWord.getNumber() + " IS COMPLETED. ---------------------");
+//                    playButtonImage.setImageResource(R.drawable.play_button_white);
+//                    playButtonImage.setPadding(0,0,0,0);
+//                    mediaPlayer.release();
+//                    mediaPlayer = null;
+//                });
+//            }
+//        });
         return listItemView;
     }
 }
